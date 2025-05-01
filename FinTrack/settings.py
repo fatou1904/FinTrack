@@ -37,6 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'corsheaders',
+    'push-notifications',
+    'django_celery_beat',
+    'django_celery_results',
+    'notifications'
+    
 ]
 
 MIDDLEWARE = [
