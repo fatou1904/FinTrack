@@ -10,7 +10,8 @@ class Categorie(models.Model):
         ('transport', 'Transport'),
         ('facture', 'Facture'),
         ('famille', 'Famille'),
-        ('hopital', 'Hopital')
+        ('hopital', 'Hopital'),
+        ('autres', 'Autres'),
     ]
     Nomcategorie = models.CharField(max_length=100, choices=CATEGORY_DEPENSE, unique=True)
     
