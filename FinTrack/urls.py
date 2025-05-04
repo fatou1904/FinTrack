@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 """
 URL configuration for FinTrack project.
 
@@ -26,6 +27,8 @@ urlpatterns = [
 
 ]
 =======
+=======
+>>>>>>> parent of 18262f1 (voic les notifications integrees)
 """
 URL configuration for FinTrack project.
 
@@ -47,6 +50,12 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('', include('authentification.urls'))
 ]
 >>>>>>> parent of 1920452 (voici l'app de goals mais j'ai pas encore integrer les notification)
+=======
+    path('', include('authentification.urls')),
+    path('api/goals/', include('goals.urls')),
+]
+>>>>>>> parent of 18262f1 (voic les notifications integrees)
