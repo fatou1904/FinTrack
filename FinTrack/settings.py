@@ -95,8 +95,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'FinTrack.wsgi.application'
 
-APPEND_SLASH = False
-
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
