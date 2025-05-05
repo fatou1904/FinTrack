@@ -7,10 +7,10 @@ from categories.models import Categorie
 class Notification(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     message = models.TextField(max_length=2000)
-    categorie = models.ForeignKey(Categorie, on_delete=models.CASCADE)
+    categorie = models.ForeignKey(Categorie, on_delete=models.CASCADE, null=True, blank=True)
     montant_depense = models.FloatField()
     seuil_objectif = models.FloatField()
-    date = models.DateField(auto_now_add=True)
+    date = models.DateTimeField(auto_now_add=True)
     est_vue = models.BooleanField(default=False)
     
     def __str__(self):

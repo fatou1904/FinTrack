@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django_celery_results',
     'authentification',
     'budgets',
+    'depense',
     'goals',
     'notification',
     'statistique',
